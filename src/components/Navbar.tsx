@@ -34,7 +34,8 @@ const Navbar = () => {
           <img
             src="/logo-carrera.png"
             alt="Carrera Revestimiento"
-            className="h-20 w-auto object-contain"
+            className="w-auto object-contain"
+            style={{ height: "9rem" }}
           />
         </a>
 
