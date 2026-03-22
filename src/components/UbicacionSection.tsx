@@ -89,8 +89,8 @@ const UbicacionSection = () => {
                 <h3 className="text-white font-semibold text-lg">Horarios</h3>
               </div>
               <p className="text-gray-400">
-                Lunes a Viernes: 8:00 – 12:30 / 16:00 – 20:00<br />
-                Sábados: 8:30 – 13:00
+                <span className="text-white/70 font-medium">Local:</span> Lunes a Sábados 9:00 – 13:00<br />
+                <span className="text-white/70 font-medium">WhatsApp:</span> Todos los días hasta las 20:00
               </p>
             </div>
 

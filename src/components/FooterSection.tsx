@@ -17,9 +17,9 @@ const FooterSection = () => {
           {/* Brand */}
           <div className="space-y-5">
             <img
-              src="/logo.webp"
+              src="/logo-carrera.jpeg"
               alt="Carrera Revestimiento"
-              className="h-20 w-auto object-contain"
+              className="h-20 w-auto object-contain rounded-lg"
             />
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Fabricación, venta e instalación de sistemas antihumedad y revestimientos decorativos. Soluciones definitivas con garantía por escrito.
@@ -96,7 +96,7 @@ const FooterSection = () => {
               className="text-white/30 text-xs uppercase tracking-widest"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
-              Lun – Sáb: 8:00 – 18:00
+              Local: Lun – Sáb 9:00 – 13:00 · WhatsApp hasta 20:00
             </div>
           </div>
         </div>

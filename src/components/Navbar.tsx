@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#inicio" className="flex items-center shrink-0">
           <img
-            src="/logo.webp"
+            src="/logo-carrera.jpeg"
             alt="Carrera Revestimiento"
             className="h-14 w-auto object-contain"
           />
