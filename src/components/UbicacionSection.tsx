@@ -15,7 +15,7 @@ const markerIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-const POSITION: [number, number] = [-31.0968, -64.4908]; // Av. España 217, La Falda, Córdoba
+const POSITION: [number, number] = [-31.0959671, -64.4894245]; // Av. España 217, La Falda, Córdoba
 
 const UbicacionSection = () => {
   return (

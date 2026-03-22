@@ -32,9 +32,9 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#inicio" className="flex items-center shrink-0">
           <img
-            src="/logo-carrera.jpeg"
+            src="/logo-carrera.png"
             alt="Carrera Revestimiento"
-            className="h-14 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </a>
 
