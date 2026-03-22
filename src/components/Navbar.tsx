@@ -28,14 +28,14 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-24">
         {/* Logo */}
         <a href="#inicio" className="flex items-center shrink-0">
           <img
             src="/logo-carrera.png"
             alt="Carrera Revestimiento"
             className="w-auto object-contain"
-            style={{ height: "9rem", marginTop: "50px" }}
+            style={{ height: "4.5rem" }}
           />
         </a>
 
