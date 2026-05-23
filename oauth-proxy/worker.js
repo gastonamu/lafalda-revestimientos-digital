@@ -74,14 +74,19 @@ export default {
 function respondToCMS({ ok, token = "", provider = "github", message = "" }) {
   // Protocolo de handshake que espera Decap CMS:
   //   1) popup envía "authorizing:github" al opener con target "*"
-  //   2) opener responde con algún mensaje desde su origin
+  //   2) opener responde repitiendo el mismo mensaje desde su origin
   //   3) popup envía "authorization:github:success:{json}" al e.origin recibido
-  // No usamos el ORIGIN hardcoded como target en el paso 3 — usamos el origin
-  // que reportó el opener, así sirve para previews/staging sin recompilar.
+  // Usamos JSON.stringify del mensaje completo para evitar problemas de
+  // escape al interpolarlo dentro del script HTML.
   const eventType = ok ? "success" : "error";
   const payload = ok ? { token, provider } : { message };
-  const json = JSON.stringify(payload).replace(/</g, "\\u003c");
+  const fullMessage = `authorization:github:${eventType}:${JSON.stringify(payload)}`;
   const allowedOriginRe = "^https://([a-z0-9-]+\\.)?carrerarevestimiento\\.com\\.ar$";
+
+  // Embebemos como literales JS válidos (JSON.stringify produce string
+  // literal correcto). El .replace de "<" mitiga inyección al HTML.
+  const messageLiteral = JSON.stringify(fullMessage).replace(/</g, "\\u003c");
+  const originReLiteral = JSON.stringify(allowedOriginRe).replace(/</g, "\\u003c");
 
   const html = `<!DOCTYPE html>
 <html>
@@ -92,12 +97,9 @@ function respondToCMS({ ok, token = "", provider = "github", message = "" }) {
   var done = false;
   function receive(e) {
     if (done) return;
-    if (!new RegExp(${JSON.stringify(allowedOriginRe)}).test(e.origin)) return;
+    if (!new RegExp(${originReLiteral}).test(e.origin)) return;
     done = true;
-    window.opener.postMessage(
-      "authorization:github:${eventType}:${json}",
-      e.origin
-    );
+    window.opener.postMessage(${messageLiteral}, e.origin);
     window.removeEventListener("message", receive, false);
     setTimeout(function () { window.close(); }, 800);
   }
