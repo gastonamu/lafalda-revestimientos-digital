@@ -1,0 +1,194 @@
+backend:
+  name: github
+  repo: gastonamu/lafalda-revestimientos-digital
+  branch: main
+  # base_url se completa en Fase 4 (OAuth proxy)
+  # base_url: https://oauth.carrerarevestimiento.com.ar
+
+publish_mode: simple
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: "es"
+
+site_url: "https://www.carrerarevestimiento.com.ar"
+display_url: "https://www.carrerarevestimiento.com.ar"
+logo_url: "https://www.carrerarevestimiento.com.ar/logo-carrera.png"
+
+collections:
+  - name: "general"
+    label: "General"
+    description: "Datos globales del sitio: marca, WhatsApp y mensajes predefinidos."
+    files:
+      - file: "src/content/global.json"
+        label: "Datos globales"
+        name: "global"
+        fields:
+          - { name: marca, label: "Marca", widget: string }
+          - { name: whatsapp_numero, label: "Número de WhatsApp", widget: string, hint: "Formato internacional sin '+'. Ej: 5435178676009" }
+          - { name: whatsapp_mensaje_presupuesto, label: "Mensaje al pedir presupuesto", widget: string }
+          - { name: whatsapp_mensaje_diagnostico, label: "Mensaje al pedir diagnóstico", widget: string }
+          - { name: whatsapp_mensaje_consulta, label: "Mensaje al consultar (botón flotante)", widget: string }
+
+  - name: "secciones"
+    label: "Secciones del sitio"
+    description: "Cada sección de la página principal. Cambios se publican al guardar."
+    files:
+      - file: "src/content/hero.json"
+        label: "1 · Hero (sección de arriba)"
+        name: "hero"
+        fields:
+          - { name: eyebrow, label: "Pretítulo (arriba del título)", widget: string }
+          - { name: title_pre, label: "Título — parte blanca", widget: string }
+          - { name: title_highlight, label: "Título — parte dorada", widget: string }
+          - { name: subtitle_pre, label: "Subtítulo — antes del resaltado", widget: text }
+          - { name: subtitle_highlight, label: "Subtítulo — texto resaltado en dorado", widget: string }
+          - { name: subtitle_post, label: "Subtítulo — después del resaltado", widget: string, required: false }
+          - { name: cta_primary_label, label: "Texto del botón principal (WhatsApp)", widget: string }
+          - { name: cta_secondary_label, label: "Texto del botón secundario (ver trabajos)", widget: string }
+          - { name: image, label: "Imagen principal", widget: image }
+          - { name: image_alt, label: "Descripción de la imagen (para accesibilidad)", widget: string }
+          - name: stats
+            label: "Estadísticas (3 contadores)"
+            widget: list
+            min: 1
+            max: 4
+            fields:
+              - { name: valor, label: "Valor", widget: string, hint: "Ej: 10+, 500+, 100%" }
+              - { name: label, label: "Etiqueta", widget: string }
+              - { name: highlight, label: "Resaltar en dorado", widget: boolean, default: false }
+          - name: badges
+            label: "Insignias (debajo del hero)"
+            widget: list
+            min: 1
+            max: 6
+            fields:
+              - name: icon
+                label: "Ícono"
+                widget: select
+                options: ["CheckSquare", "Droplets", "Shield"]
+              - { name: label, label: "Etiqueta principal", widget: string }
+              - { name: sub, label: "Subtexto", widget: string }
+
+      - file: "src/content/problemas.json"
+        label: "2 · Problemas (¿Tenés humedad?)"
+        name: "problemas"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title, label: "Título", widget: string }
+          - { name: cta_primary_label, label: "Texto botón principal (WhatsApp)", widget: string }
+          - { name: cta_secondary_label, label: "Texto botón secundario", widget: string }
+          - name: items
+            label: "Tipos de problemas"
+            widget: list
+            min: 1
+            fields:
+              - { name: img, label: "Imagen", widget: image }
+              - { name: title, label: "Título principal", widget: string }
+              - { name: sub, label: "Subtítulo (en dorado)", widget: string, required: false }
+
+      - file: "src/content/servicios.json"
+        label: "3 · Nuestros Servicios"
+        name: "servicios"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title, label: "Título", widget: string }
+          - name: items
+            label: "Servicios"
+            widget: list
+            min: 1
+            fields:
+              - name: icon
+                label: "Ícono"
+                widget: select
+                options: ["Droplets", "Home", "Layers", "Search"]
+              - { name: title, label: "Nombre del servicio", widget: string }
+              - { name: desc, label: "Descripción", widget: text }
+
+      - file: "src/content/diferenciales.json"
+        label: "4 · La Diferencia Carrera (diferenciales)"
+        name: "diferenciales"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title_pre, label: "Título — parte blanca", widget: string }
+          - { name: title_highlight, label: "Título — parte dorada", widget: string }
+          - name: items
+            label: "Diferenciales"
+            widget: list
+            min: 1
+            fields:
+              - name: icon
+                label: "Ícono"
+                widget: select
+                options: ["ShieldCheck", "Factory", "Zap", "Clock"]
+              - { name: number, label: "Numerito (01, 02, ...)", widget: string }
+              - { name: title, label: "Título", widget: string }
+              - { name: desc, label: "Descripción", widget: text }
+
+      - file: "src/content/proyectos.json"
+        label: "5 · Nuestros Proyectos (galería)"
+        name: "proyectos"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title, label: "Título", widget: string }
+          - { name: subtitle, label: "Subtítulo", widget: text }
+          - name: items
+            label: "Proyectos"
+            widget: list
+            min: 1
+            fields:
+              - { name: img, label: "Foto", widget: image }
+              - { name: lugar, label: "Lugar (ej: La Falda)", widget: string }
+              - { name: desc, label: "Descripción del proyecto", widget: string }
+
+      - file: "src/content/ubicacion.json"
+        label: "6 · Dónde estamos (ubicación)"
+        name: "ubicacion"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title_pre, label: "Título — parte blanca", widget: string }
+          - { name: title_highlight, label: "Título — parte dorada", widget: string }
+          - { name: subtitle, label: "Subtítulo", widget: text }
+          - { name: direccion_linea_1, label: "Dirección — línea 1", widget: string }
+          - { name: direccion_linea_2, label: "Dirección — línea 2", widget: string }
+          - { name: horario_local, label: "Horario del local", widget: string }
+          - { name: horario_whatsapp, label: "Horario de WhatsApp", widget: string }
+          - { name: google_maps_url, label: "URL de Google Maps (botón 'Cómo llegar')", widget: string }
+          - { name: latitud, label: "Latitud del marcador", widget: number, value_type: "float", step: 0.000001 }
+          - { name: longitud, label: "Longitud del marcador", widget: number, value_type: "float", step: 0.000001 }
+          - { name: popup_titulo, label: "Título del popup del mapa", widget: string }
+          - { name: popup_direccion, label: "Dirección en el popup", widget: string }
+
+      - file: "src/content/footer.json"
+        label: "7 · Footer (pie de página)"
+        name: "footer"
+        fields:
+          - { name: descripcion, label: "Descripción de la empresa", widget: text }
+          - { name: logo, label: "Logo", widget: image }
+          - { name: logo_alt, label: "Descripción del logo (accesibilidad)", widget: string }
+          - name: redes
+            label: "Redes sociales"
+            widget: list
+            max: 4
+            fields:
+              - name: tipo
+                label: "Red"
+                widget: select
+                options: ["instagram", "facebook"]
+              - { name: url, label: "URL", widget: string }
+          - name: telefonos
+            label: "Teléfonos de contacto"
+            widget: list
+            min: 1
+            max: 4
+            fields:
+              - { name: label, label: "Número visible", widget: string, hint: "Ej: 351-7867609" }
+              - { name: href, label: "Link tel:", widget: string, hint: "Ej: tel:+5435178676009" }
+          - { name: email, label: "Email de contacto", widget: string }
+          - { name: direccion_linea_1, label: "Dirección — línea 1", widget: string }
+          - { name: direccion_linea_2, label: "Dirección — línea 2", widget: string }
+          - { name: maps_url, label: "URL Google Maps", widget: string }
+          - { name: horario_resumen, label: "Resumen de horarios", widget: string }
+          - { name: copyright, label: "Texto copyright (sin el año)", widget: string }
+          - { name: derechos, label: "Texto de derechos reservados", widget: string }
