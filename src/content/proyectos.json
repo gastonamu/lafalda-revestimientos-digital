@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Trabajos realizados",
+  "title": "NUESTROS PROYECTOS",
+  "subtitle": "Cada proyecto es una solución real. Trabajo garantizado en toda la región.",
+  "items": [
+    { "img": "/uploads/trabajo-1.jpg", "lugar": "La Falda", "desc": "Living con revestimiento piedra" },
+    { "img": "/uploads/trabajo-2.jpg", "lugar": "Villa Giardino", "desc": "Fachada exterior completa" },
+    { "img": "/uploads/trabajo-3.jpg", "lugar": "Cosquín", "desc": "Baño con paneles antihumedad" },
+    { "img": "/uploads/trabajo-4.jpg", "lugar": "La Falda", "desc": "Local comercial revestido" },
+    { "img": "/uploads/textura-travertino.jpg", "lugar": "Cruz Chica", "desc": "Escalera interior travertino" },
+    { "img": "/uploads/textura-piedra.jpg", "lugar": "La Falda", "desc": "Jardín exterior piedra rústica" }
+  ]
+}

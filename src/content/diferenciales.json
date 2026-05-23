@@ -1,0 +1,31 @@
+{
+  "eyebrow": "Por qué elegirnos",
+  "title_pre": "LA DIFERENCIA",
+  "title_highlight": "CARRERA",
+  "items": [
+    {
+      "icon": "ShieldCheck",
+      "number": "01",
+      "title": "Garantía por Escrito",
+      "desc": "Cada trabajo entregado incluye certificación y respaldo formal. No prometemos, garantizamos."
+    },
+    {
+      "icon": "Factory",
+      "number": "02",
+      "title": "Fábrica Propia",
+      "desc": "Precio directo sin intermediarios. Producción local con materiales de primera calidad seleccionados."
+    },
+    {
+      "icon": "Zap",
+      "number": "03",
+      "title": "Instalación Express",
+      "desc": "Obra limpia y rápida. Colocación profesional sin escombros ni reparaciones adicionales."
+    },
+    {
+      "icon": "Clock",
+      "number": "04",
+      "title": "Diagnóstico Gratuito",
+      "desc": "Evaluamos tu caso sin costo. Identificamos el origen real del problema antes de proponer soluciones."
+    }
+  ]
+}

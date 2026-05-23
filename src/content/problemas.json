@@ -1,0 +1,12 @@
+{
+  "eyebrow": "¿Lo reconocés?",
+  "title": "¿TENÉS HUMEDAD EN TU CASA?",
+  "cta_primary_label": "Solicitar Diagnóstico",
+  "cta_secondary_label": "Ver Trabajos Realizados",
+  "items": [
+    { "img": "/uploads/trabajo-1.jpg", "title": "MANCHAS", "sub": "EN PAREDES" },
+    { "img": "/uploads/trabajo-2.jpg", "title": "PINTURA", "sub": "DESCASCARADA" },
+    { "img": "/uploads/trabajo-3.jpg", "title": "OLOR A", "sub": "HUMEDAD" },
+    { "img": "/uploads/trabajo-4.jpg", "title": "FILTRACIONES", "sub": "" }
+  ]
+}

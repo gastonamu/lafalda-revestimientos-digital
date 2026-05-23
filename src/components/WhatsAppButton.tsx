@@ -1,11 +1,10 @@
 import { MessageCircle } from "lucide-react";
+import { waLink, waMensajes } from "@/lib/wa";
 
 const WhatsAppButton = () => {
-  const waLink = "https://wa.me/5435178676009?text=Hola%2C%20quiero%20consultar%20por%20tratamiento%20antihumedad";
-
   return (
     <a
-      href={waLink}
+      href={waLink(waMensajes.consulta)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"

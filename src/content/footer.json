@@ -1,0 +1,20 @@
+{
+  "descripcion": "Fabricación, venta e instalación de sistemas antihumedad y revestimientos decorativos. Soluciones definitivas con garantía por escrito.",
+  "logo": "/logo-carrera.png",
+  "logo_alt": "Carrera Revestimiento",
+  "redes": [
+    { "tipo": "instagram", "url": "#" },
+    { "tipo": "facebook", "url": "#" }
+  ],
+  "telefonos": [
+    { "label": "351-7867609", "href": "tel:+5435178676009" },
+    { "label": "3548-417441", "href": "tel:+543548417441" }
+  ],
+  "email": "contacto@carrerarevestimiento.com",
+  "direccion_linea_1": "Av. España 217, La Falda,",
+  "direccion_linea_2": "Córdoba, Argentina",
+  "maps_url": "https://maps.google.com/?q=La+Falda,+Córdoba,+Argentina",
+  "horario_resumen": "Local: Lun – Sáb 9:00 – 13:00 · WhatsApp hasta 20:00",
+  "copyright": "Carrera Revestimiento. La Falda, Córdoba.",
+  "derechos": "Todos los derechos reservados."
+}

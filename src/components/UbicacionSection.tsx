@@ -3,8 +3,8 @@ import { MapPin } from "lucide-react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import ubicacion from "@/content/ubicacion.json";
 
-// Fix default marker icon issue with bundlers
 const markerIcon = new L.Icon({
   iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
   iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
@@ -15,9 +15,9 @@ const markerIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-const POSITION: [number, number] = [-31.095967, -64.4917205]; // Av. España 217, La Falda, Córdoba
-
 const UbicacionSection = () => {
+  const position: [number, number] = [ubicacion.latitud, ubicacion.longitud];
+
   return (
     <section id="ubicacion" className="py-24 texture-dark">
       <div className="max-w-7xl mx-auto px-6">
@@ -28,16 +28,16 @@ const UbicacionSection = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <span className="section-eyebrow">Visitanos</span>
+          <span className="section-eyebrow">{ubicacion.eyebrow}</span>
           <h2
             className="text-4xl md:text-5xl font-bold mt-2"
             style={{ fontFamily: "Archivo Black, sans-serif", color: "#fff" }}
           >
-            DÓNDE <span style={{ color: "hsl(43,74%,49%)" }}>ESTAMOS</span>
+            {ubicacion.title_pre} <span style={{ color: "hsl(43,74%,49%)" }}>{ubicacion.title_highlight}</span>
           </h2>
           <div className="gold-line mx-auto mt-4" />
           <p className="text-gray-400 max-w-2xl mx-auto mt-4 text-lg">
-            Acercate a nuestro local y conocé todos nuestros productos en persona.
+            {ubicacion.subtitle}
           </p>
         </motion.div>
 
@@ -50,7 +50,7 @@ const UbicacionSection = () => {
         >
           <div className="md:col-span-2 rounded-2xl overflow-hidden border border-white/10 shadow-lg" style={{ height: 400 }}>
             <MapContainer
-              center={POSITION}
+              center={position}
               zoom={16}
               scrollWheelZoom={false}
               style={{ height: "100%", width: "100%" }}
@@ -59,11 +59,11 @@ const UbicacionSection = () => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
-              <Marker position={POSITION} icon={markerIcon}>
+              <Marker position={position} icon={markerIcon}>
                 <Popup>
-                  <strong>Carrera Revestimientos</strong>
+                  <strong>{ubicacion.popup_titulo}</strong>
                   <br />
-                  Av. España 217, La Falda, Córdoba
+                  {ubicacion.popup_direccion}
                 </Popup>
               </Marker>
             </MapContainer>
@@ -76,8 +76,8 @@ const UbicacionSection = () => {
                 <h3 className="text-white font-semibold text-lg">Dirección</h3>
               </div>
               <p className="text-gray-400">
-                Av. España 217<br />
-                La Falda, Córdoba, Argentina
+                {ubicacion.direccion_linea_1}<br />
+                {ubicacion.direccion_linea_2}
               </p>
             </div>
 
@@ -89,13 +89,13 @@ const UbicacionSection = () => {
                 <h3 className="text-white font-semibold text-lg">Horarios</h3>
               </div>
               <p className="text-gray-400">
-                <span className="text-white/70 font-medium">Local:</span> Lunes a Sábados 9:00 – 13:00<br />
-                <span className="text-white/70 font-medium">WhatsApp:</span> Todos los días hasta las 20:00
+                <span className="text-white/70 font-medium">Local:</span> {ubicacion.horario_local}<br />
+                <span className="text-white/70 font-medium">WhatsApp:</span> {ubicacion.horario_whatsapp}
               </p>
             </div>
 
             <a
-              href="https://maps.google.com/?q=Av+España+217,+La+Falda,+Córdoba,+Argentina"
+              href={ubicacion.google_maps_url}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold text-center py-3 rounded-xl font-semibold tracking-wide"

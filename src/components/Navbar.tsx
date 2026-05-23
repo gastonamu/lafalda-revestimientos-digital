@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import { waLink, waMensajes } from "@/lib/wa";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -8,7 +9,7 @@ const links = [
   { label: "Proyectos", href: "#proyectos" },
 ];
 
-const waLink = "https://wa.me/5435178676009?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto";
+const presupuestoHref = waLink(waMensajes.presupuesto);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -56,7 +57,7 @@ const Navbar = () => {
         {/* Presupuesto CTA */}
         <div className="hidden md:flex items-center">
           <a
-            href={waLink}
+            href={presupuestoHref}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold flex items-center gap-2"
@@ -91,7 +92,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href={waLink}
+            href={presupuestoHref}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

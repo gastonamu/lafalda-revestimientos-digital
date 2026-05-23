@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Lo que hacemos",
+  "title": "NUESTROS SERVICIOS",
+  "items": [
+    {
+      "icon": "Droplets",
+      "title": "Tratamiento Antihumedad",
+      "desc": "Solución definitiva contra manchas, hongos y eflorescencias. Productos profesionales de larga duración."
+    },
+    {
+      "icon": "Home",
+      "title": "Impermeabilización",
+      "desc": "Protección total de techos, paredes y cimientos. Sellado de grietas y fisuras con materiales de alta resistencia."
+    },
+    {
+      "icon": "Layers",
+      "title": "Revestimientos Decorativos",
+      "desc": "Paneles y placas antihumedad con diseños modernos. Solución estética y funcional para interior y exterior."
+    },
+    {
+      "icon": "Search",
+      "title": "Diagnóstico Técnico",
+      "desc": "Evaluación gratuita del problema en tu propiedad. Identificamos el origen y te damos el tratamiento exacto."
+    }
+  ]
+}

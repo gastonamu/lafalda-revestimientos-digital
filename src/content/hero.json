@@ -1,0 +1,22 @@
+{
+  "eyebrow": "Solución Definitiva",
+  "title_pre": "CONTRA LA",
+  "title_highlight": "HUMEDAD",
+  "subtitle_pre": "Tratamientos antihumedad, impermeabilización y revestimientos duraderos con ",
+  "subtitle_highlight": "garantía por escrito",
+  "subtitle_post": ".",
+  "cta_primary_label": "Solicitar Diagnóstico",
+  "cta_secondary_label": "Ver Trabajos Realizados",
+  "image": "/uploads/hero-placa.jpg",
+  "image_alt": "Revestimiento antihumedad Carrera",
+  "stats": [
+    { "valor": "10+", "label": "Años de experiencia", "highlight": false },
+    { "valor": "500+", "label": "Obras realizadas", "highlight": false },
+    { "valor": "100%", "label": "Garantizados", "highlight": true }
+  ],
+  "badges": [
+    { "icon": "CheckSquare", "label": "Diagnóstico", "sub": "Profesional" },
+    { "icon": "Droplets", "label": "Productos", "sub": "Antihumedad" },
+    { "icon": "Shield", "label": "Garantía", "sub": "por Escrito" }
+  ]
+}
