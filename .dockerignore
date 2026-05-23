@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+.git
+.github
+.claude
+.vscode
+.idea
+.DS_Store
+.wrangler
+.env
+.env.*
+*.log
+playwright-report
+test-results
