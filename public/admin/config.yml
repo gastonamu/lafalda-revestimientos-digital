@@ -2,8 +2,8 @@ backend:
   name: github
   repo: gastonamu/lafalda-revestimientos-digital
   branch: main
-  # base_url se completa en Fase 4 (OAuth proxy)
-  # base_url: https://oauth.carrerarevestimiento.com.ar
+  base_url: https://oauth.carrerarevestimiento.com.ar
+  auth_endpoint: /auth
 
 publish_mode: simple
 
