@@ -72,11 +72,16 @@ export default {
 };
 
 function respondToCMS({ ok, token, provider, message }) {
-  // Decap escucha el evento "authorization:github:success" o ":error"
-  // como un postMessage del popup hacia window.opener.
+  // Protocolo de handshake que espera Decap CMS:
+  //   1) popup envía "authorizing:github" al opener con target "*"
+  //   2) opener responde con algún mensaje desde su origin
+  //   3) popup envía "authorization:github:success:{json}" al e.origin recibido
+  // No usamos el ORIGIN hardcoded como target en el paso 3 — usamos el origin
+  // que reportó el opener, así sirve para previews/staging sin recompilar.
   const eventType = ok ? "success" : "error";
   const payload = ok ? { token, provider } : { message };
   const json = JSON.stringify(payload).replace(/</g, "\\u003c");
+  const allowedOriginRe = "^https://([a-z0-9-]+\\.)?carrerarevestimiento\\.com\\.ar$";
 
   const html = `<!DOCTYPE html>
 <html>
@@ -84,16 +89,21 @@ function respondToCMS({ ok, token, provider, message }) {
 <body>
 <script>
 (function() {
-  function postMsg() {
+  var done = false;
+  function receive(e) {
+    if (done) return;
+    if (!new RegExp(${JSON.stringify(allowedOriginRe)}).test(e.origin)) return;
+    done = true;
     window.opener.postMessage(
       "authorization:github:${eventType}:${json}",
-      "${ORIGIN}"
+      e.origin
     );
+    window.removeEventListener("message", receive, false);
+    setTimeout(function () { window.close(); }, 800);
   }
-  window.addEventListener("message", function (e) {
-    if (e.data === "authorizing:github") postMsg();
-  }, false);
-  postMsg();
+  window.addEventListener("message", receive, false);
+  // Saludo inicial: el opener responde y dispara receive().
+  window.opener.postMessage("authorizing:github", "*");
 })();
 </script>
 <p>Autenticación completada. Esta ventana se cerrará automáticamente.</p>
