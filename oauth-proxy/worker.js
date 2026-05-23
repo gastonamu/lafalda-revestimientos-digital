@@ -71,7 +71,7 @@ export default {
   },
 };
 
-function respondToCMS({ ok, token, provider, message }) {
+function respondToCMS({ ok, token = "", provider = "github", message = "" }) {
   // Protocolo de handshake que espera Decap CMS:
   //   1) popup envía "authorizing:github" al opener con target "*"
   //   2) opener responde con algún mensaje desde su origin
