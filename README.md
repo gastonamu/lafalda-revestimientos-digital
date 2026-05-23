@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# Carrera Revestimientos
 
-## Project info
+Sitio web institucional de **Carrera Revestimientos**, fábrica y empresa de placas decorativas antihumedad para techos y paredes, ubicada en La Falda (Valle de Punilla, Córdoba, Argentina).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Producción: https://www.carrerarevestimiento.com.ar
 
-## How can I edit this code?
+Es una SPA estática de una sola página (con secciones: hero, problemas, diferenciales, catálogo, galería, ubicación y footer) más una página `*` para 404.
 
-There are several ways of editing your application.
+## Stack
 
-**Use Lovable**
+- Vite + React 18 + TypeScript
+- Tailwind CSS + shadcn-ui
+- react-router-dom (BrowserRouter)
+- Leaflet / react-leaflet (mapa de ubicación)
+- framer-motion, lucide-react, sonner
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Desarrollo local
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Requiere Node 20+ y npm.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm install
+npm run dev      # dev server en http://localhost:8080
+npm run build    # build de producción → dist/
+npm run preview  # servir dist/ localmente
+npm run lint
+npm run test
 ```
 
-**Edit a file directly in GitHub**
+## Estructura
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `src/pages/Index.tsx` — página principal, compone todas las secciones
+- `src/components/*Section.tsx` — secciones del home (contenido hoy está hardcodeado en cada una)
+- `src/components/ui/` — componentes shadcn-ui
+- `public/` — assets estáticos (logo, favicon)
 
-**Use GitHub Codespaces**
+## Deploy en Coolify (VPS)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+El sitio se sirve como **Static Site** en Coolify:
 
-## What technologies are used for this project?
+- **Build pack**: Static
+- **Install command**: `npm ci`
+- **Build command**: `npm run build`
+- **Publish directory**: `dist`
+- **SPA fallback**: activar (todas las rutas deben caer en `index.html` para que react-router funcione al refrescar)
+- **HTTPS**: Let's Encrypt automático tras apuntar el dominio a la IP de la VPS
 
-This project is built with:
+## Gestión de contenido
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Actualmente los textos, productos, imágenes y datos de contacto viven dentro de los componentes `*Section.tsx`. Cambiar contenido = editar el `.tsx` y redeploy.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Plan a futuro: integrar **Decap CMS** bajo `/admin` con los contenidos movidos a archivos JSON/MD en este mismo repo, autenticado con GitHub OAuth.
