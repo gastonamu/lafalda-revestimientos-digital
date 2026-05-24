@@ -1,0 +1,37 @@
+{
+  "slug": "placas-color",
+  "nombre": "Placas en Color",
+  "orden": 2,
+  "eyebrow": "Producto",
+  "titulo_pre": "PLACAS",
+  "titulo_highlight": "EN COLOR",
+  "subtitulo": "Versión decorativa del sistema antihumedad. Diseño contemporáneo, tonalidades variadas y la misma performance técnica contra la humedad.",
+  "imagen_hero": "/uploads/textura-marmol.jpg",
+  "imagen_hero_alt": "Placa decorativa en color",
+  "cta_label": "Pedir Muestrario",
+  "descripcion": "Mismas placas del sistema antihumedad pero pensadas para ambientes donde la estética manda: livings, dormitorios, locales comerciales, recepciones. Disponibles en una paleta de colores neutros y modernos que se integran con cualquier ambientación.\n\nEl acabado es uniforme, no requiere pintura adicional, y mantiene todas las propiedades técnicas: antihumedad, incombustible, aislante térmico y acústico.",
+  "beneficios": [
+    { "icon": "Droplets", "title": "Misma performance antihumedad", "desc": "No es una placa decorativa común: trata el problema real de humedad en la pared." },
+    { "icon": "Layers", "title": "Variedad de colores", "desc": "Paleta moderna pensada para integrarse con diseños contemporáneos." },
+    { "icon": "CheckSquare", "title": "Sin pintura adicional", "desc": "El color viene en la placa, terminada de fábrica. Cero mantenimiento estético." },
+    { "icon": "Flame", "title": "Incombustible", "desc": "Apta para ambientes con requerimientos de seguridad al fuego." },
+    { "icon": "Snowflake", "title": "Confort térmico", "desc": "Mejora la temperatura percibida en cualquier estación." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-marmol.jpg", "alt": "Detalle textura mármol" },
+    { "img": "/uploads/trabajo-1.jpg", "alt": "Ambiente con placas en color" },
+    { "img": "/uploads/trabajo-4.jpg", "alt": "Local comercial con placas decorativas" }
+  ],
+  "especificaciones": [
+    { "label": "Medidas", "valor": "60 x 60 cm" },
+    { "label": "Espesor", "valor": "10 mm" },
+    { "label": "Colores disponibles", "valor": "Consultar paleta vigente" },
+    { "label": "Acabado", "valor": "Mate / Satinado según modelo" },
+    { "label": "Garantía", "valor": "Por escrito" }
+  ],
+  "faq": [
+    { "pregunta": "¿Pierdo la protección antihumedad por elegir un modelo decorativo?", "respuesta": "No. Es exactamente la misma placa técnica con un acabado de color en lugar de blanco." },
+    { "pregunta": "¿Puedo combinar colores en una misma habitación?", "respuesta": "Sí, podemos diseñar paños con distintos tonos para generar acentos o paredes destacadas." },
+    { "pregunta": "¿Se decolora con el sol?", "respuesta": "El pigmento está integrado a la masa de la placa, no es una pintura superficial, por lo que mantiene el color en el tiempo." }
+  ]
+}

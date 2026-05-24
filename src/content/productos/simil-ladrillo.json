@@ -1,0 +1,38 @@
+{
+  "slug": "simil-ladrillo",
+  "nombre": "Símil Ladrillo",
+  "orden": 6,
+  "eyebrow": "Producto",
+  "titulo_pre": "SÍMIL",
+  "titulo_highlight": "LADRILLO",
+  "subtitulo": "Sistema modular de bloques de yeso macizo para tabiques interiores. Construí divisiones acabadas, listas para pintar, en la mitad de tiempo.",
+  "imagen_hero": "/uploads/textura-ladrillo.jpg",
+  "imagen_hero_alt": "Tabique símil ladrillo en obra",
+  "cta_label": "Cotizar Tabiquería",
+  "descripcion": "Sistema de tabiquería compuesto por bloques macizos de yeso de 50 x 50 cm con bordes machimbrados, que se ensamblan mediante adhesivo especializado. El resultado son paredes interiores acabadas, sin necesidad de revoque grueso ni fino, listas para pintar o revestir.\n\nIdeal para divisiones interiores en obras nuevas o refacciones, especialmente donde se busca rapidez de ejecución, bajo peso por metro cuadrado y buena performance térmica y acústica.",
+  "beneficios": [
+    { "icon": "Zap", "title": "50% más rápido", "desc": "Construcción de tabiques en la mitad de tiempo comparado con albañilería tradicional." },
+    { "icon": "Hammer", "title": "Sin revoques", "desc": "El bloque queda con terminación lista para pintar. Eliminás dos etapas de obra." },
+    { "icon": "Layers", "title": "Peso reducido", "desc": "Aproximadamente 84 kg/m² en versión de 8 cm. Menos carga estructural." },
+    { "icon": "Droplets", "title": "Resistente a humedad", "desc": "El yeso macizo es inerte al agua. Apto para zonas húmedas." },
+    { "icon": "Flame", "title": "Incombustible", "desc": "Ensayado a 960 °C. Apto para cumplir normativa anti-incendio." },
+    { "icon": "Volume2", "title": "Aislación térmica y acústica", "desc": "Conductividad térmica 0,38 W/mK. Excelente desempeño acústico." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-ladrillo.jpg", "alt": "Textura símil ladrillo" },
+    { "img": "/uploads/trabajo-2.jpg", "alt": "Tabique en obra" },
+    { "img": "/uploads/trabajo-3.jpg", "alt": "Aplicación en baño" }
+  ],
+  "especificaciones": [
+    { "label": "Formatos", "valor": "50 x 50 x 8 cm · 50 x 50 x 10 cm" },
+    { "label": "Material", "valor": "Yeso macizo con bordes machimbrados" },
+    { "label": "Densidad", "valor": "≈ 84 kg/m² (muros 8 cm)" },
+    { "label": "Conductividad térmica", "valor": "0,38 W/mK" },
+    { "label": "Sistema de unión", "valor": "Adhesivo especializado Carrera" }
+  ],
+  "faq": [
+    { "pregunta": "¿Sirve para baños y cocinas?", "respuesta": "Sí. El yeso macizo es inerte al agua y mantiene su integridad estructural en zonas húmedas." },
+    { "pregunta": "¿Puedo colgar cosas pesadas?", "respuesta": "Sí. Soporta tacos para estantes, TVs, espejos, etc. Para cargas muy altas conviene consultarnos por la versión de 10 cm." },
+    { "pregunta": "¿Necesito revocar después?", "respuesta": "No. La cara del bloque queda lista para pintar o aplicar revestimiento decorativo directamente." }
+  ]
+}

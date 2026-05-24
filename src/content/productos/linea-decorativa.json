@@ -1,0 +1,34 @@
+{
+  "slug": "linea-decorativa",
+  "nombre": "Línea Decorativa Completa",
+  "orden": 7,
+  "eyebrow": "Producto",
+  "titulo_pre": "LÍNEA",
+  "titulo_highlight": "DECORATIVA",
+  "subtitulo": "Molduras, plafones, esquineros e iluminación difusa. Elementos arquitectónicos para terminaciones de detalle, solos o combinados con el sistema antihumedad.",
+  "imagen_hero": "/uploads/textura-pizarra.jpg",
+  "imagen_hero_alt": "Detalle decorativo con moldura",
+  "cta_label": "Ver Catálogo",
+  "descripcion": "Conjunto de elementos arquitectónicos diseñados para elevar la categoría estética de cualquier ambiente: molduras perimetrales, plafones centrales, esquineros y sistemas de iluminación difusa. Cada pieza está pensada para integrarse con nuestro sistema antihumedad o aplicarse de manera independiente.\n\nUna solución económica y de impacto visual alto para residencias, oficinas, salones, restaurantes y locales comerciales.",
+  "beneficios": [
+    { "icon": "Layers", "title": "Variedad de diseños", "desc": "Catálogo amplio de molduras, plafones y esquineros para cada estilo." },
+    { "icon": "Zap", "title": "Impacto estético inmediato", "desc": "Eleva la categoría del ambiente sin obra mayor." },
+    { "icon": "CheckSquare", "title": "Aplicación versátil", "desc": "Funciona como complemento del sistema antihumedad o de manera independiente." },
+    { "icon": "Ruler", "title": "Medidas estándar y especiales", "desc": "Disponibilidad de stock para obra rápida, opción de pedido especial para proyectos puntuales." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-pizarra.jpg", "alt": "Detalle pizarra decorativa" },
+    { "img": "/uploads/textura-geometrico.jpg", "alt": "Plafón geométrico" },
+    { "img": "/uploads/trabajo-4.jpg", "alt": "Aplicación con molduras" }
+  ],
+  "especificaciones": [
+    { "label": "Productos", "valor": "Molduras, plafones, esquineros, luces difusas" },
+    { "label": "Aplicaciones", "valor": "Living, comedor, dormitorios, oficinas, salones, restaurantes" },
+    { "label": "Compatibilidad", "valor": "Combinable con sistema antihumedad o aplicación independiente" }
+  ],
+  "faq": [
+    { "pregunta": "¿Puedo usar estas molduras si no tengo el sistema antihumedad instalado?", "respuesta": "Sí. La línea decorativa funciona de manera independiente sobre cualquier pared o techo." },
+    { "pregunta": "¿Vienen pintadas o las pinto yo?", "respuesta": "Las piezas vienen en color blanco listas para pintar, lo cual te permite elegir el tono final del ambiente." },
+    { "pregunta": "¿Hacen diseños especiales para proyectos grandes?", "respuesta": "Para obras de escala podemos cotizar piezas a medida según diseño del estudio de arquitectura." }
+  ]
+}

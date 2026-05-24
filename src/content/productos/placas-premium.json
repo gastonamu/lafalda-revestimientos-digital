@@ -1,0 +1,38 @@
+{
+  "slug": "placas-premium",
+  "nombre": "Placas Decorativas Premium",
+  "orden": 3,
+  "eyebrow": "Producto",
+  "titulo_pre": "PLACAS",
+  "titulo_highlight": "PREMIUM",
+  "subtitulo": "Línea decorativa de alta gama con texturas símil mármol, travertino y geometrías. Estética definida con la misma base antihumedad de fábrica.",
+  "imagen_hero": "/uploads/textura-travertino.jpg",
+  "imagen_hero_alt": "Placa decorativa premium textura travertino",
+  "cta_label": "Conocer la Línea Premium",
+  "descripcion": "Nuestra línea premium incorpora texturas que recuperan la calidez de materiales nobles —piedras claras, mármoles, travertinos, motivos geométricos— sobre la misma base técnica antihumedad. Cada modelo está pensado para ambientes que necesitan carácter sin perder protección estructural.\n\nLos diseños se aplican durante el proceso de fabricación, por lo que la textura forma parte del material y no se desgasta con el uso ni con la limpieza.",
+  "beneficios": [
+    { "icon": "Layers", "title": "Texturas exclusivas", "desc": "Más de 10 modelos inspirados en piedras y motivos contemporáneos." },
+    { "icon": "Droplets", "title": "Antihumedad integrada", "desc": "Solución decorativa con la misma performance técnica de la línea base." },
+    { "icon": "Shield", "title": "Garantía por escrito", "desc": "Respaldamos cada trabajo con certificación formal." },
+    { "icon": "Volume2", "title": "Mejora acústica", "desc": "Aporta absorción sonora natural al ambiente." },
+    { "icon": "CheckSquare", "title": "Compuestos seleccionados", "desc": "Materiales de primera calidad seleccionados en planta para cada lote." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-travertino.jpg", "alt": "Textura travertino premium" },
+    { "img": "/uploads/textura-marmol.jpg", "alt": "Textura mármol premium" },
+    { "img": "/uploads/textura-geometrico.jpg", "alt": "Patrón geométrico" },
+    { "img": "/uploads/trabajo-4.jpg", "alt": "Aplicación en local comercial" }
+  ],
+  "especificaciones": [
+    { "label": "Medidas", "valor": "60 x 60 cm" },
+    { "label": "Espesor", "valor": "10 mm" },
+    { "label": "Modelos disponibles", "valor": "Más de 10 (consultar catálogo)" },
+    { "label": "Garantía", "valor": "Por escrito" },
+    { "label": "Limpieza", "valor": "Paño húmedo y jabón neutro" }
+  ],
+  "faq": [
+    { "pregunta": "¿La textura se desgasta con el tiempo?", "respuesta": "No. La textura forma parte de la placa misma, no es un revestimiento superficial." },
+    { "pregunta": "¿Puedo elegir un modelo personalizado?", "respuesta": "Para grandes superficies podemos cotizar variantes especiales según disponibilidad de planta." },
+    { "pregunta": "¿Se puede usar en exterior?", "respuesta": "La línea premium está pensada principalmente para interiores. Para exterior te recomendamos consultarnos por la línea símil piedra." }
+  ]
+}

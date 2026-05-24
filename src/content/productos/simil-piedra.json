@@ -1,0 +1,38 @@
+{
+  "slug": "simil-piedra",
+  "nombre": "Símil Piedra",
+  "orden": 4,
+  "eyebrow": "Producto",
+  "titulo_pre": "SÍMIL",
+  "titulo_highlight": "PIEDRA",
+  "subtitulo": "Revestimiento mineral fino para fachadas y muros. Impermeable, ultraliviano y aislante, sin demolición ni escombros.",
+  "imagen_hero": "/uploads/textura-piedra.jpg",
+  "imagen_hero_alt": "Revestimiento símil piedra en fachada",
+  "cta_label": "Cotizar Fachada",
+  "descripcion": "Sistema de revestimiento mineral compuesto por cuarzo cristalino, cemento blanco y pigmentos naturales sin aditivos químicos. Se aplica directamente sobre el sustrato existente (revoque, ladrillo, hormigón, cerámico) en un espesor mínimo, manteniendo todas las prestaciones de un revestimiento pétreo tradicional pero sin su peso ni el costo de obra asociada.\n\nLos pigmentos forman parte de la masa, lo que asegura colores estables ante la intemperie y mantenimiento prácticamente nulo.",
+  "beneficios": [
+    { "icon": "Droplets", "title": "Impermeable", "desc": "Resistente al agua y a las variaciones climáticas. Apto para exterior." },
+    { "icon": "Layers", "title": "Ultraliviano", "desc": "Sumamente liviano comparado con piedra natural. No sobrecarga la estructura." },
+    { "icon": "Snowflake", "title": "Aislante térmico", "desc": "Mejora el comportamiento térmico del muro." },
+    { "icon": "CheckSquare", "title": "Sin demolición", "desc": "Se aplica sobre la superficie actual sin generar residuos." },
+    { "icon": "Flame", "title": "Incombustible", "desc": "100% mineral, no propaga llama." },
+    { "icon": "Shield", "title": "Color estable", "desc": "Pigmentos minerales integrados a la masa, resistentes al sol y la lluvia." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-piedra.jpg", "alt": "Textura piedra rústica" },
+    { "img": "/uploads/textura-travertino.jpg", "alt": "Variante travertino" },
+    { "img": "/uploads/trabajo-2.jpg", "alt": "Fachada exterior revestida" }
+  ],
+  "especificaciones": [
+    { "label": "Composición", "valor": "Cuarzo cristalino + cemento blanco + pigmentos minerales" },
+    { "label": "Espesor de aplicación", "valor": "Variable según textura (consultar)" },
+    { "label": "Aplicaciones", "valor": "Muros exteriores e interiores, fachadas, zócalos" },
+    { "label": "Sustratos admitidos", "valor": "Revoque, ladrillo, hormigón, cerámica, mármol" },
+    { "label": "Mantenimiento", "valor": "Mínimo, no requiere pintura" }
+  ],
+  "faq": [
+    { "pregunta": "¿Se puede aplicar sobre cerámica vieja?", "respuesta": "Sí. El sistema admite múltiples sustratos sin necesidad de demoler ni picar." },
+    { "pregunta": "¿Resiste lluvia y sol fuerte?", "respuesta": "Sí, está diseñado para intemperie. Los pigmentos minerales no se decoloran." },
+    { "pregunta": "¿Cuánto tarda la aplicación?", "respuesta": "Depende de la superficie. Una fachada estándar se completa en pocos días." }
+  ]
+}

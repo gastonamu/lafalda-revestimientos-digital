@@ -1,0 +1,38 @@
+{
+  "slug": "cielorraso-ignifugo",
+  "nombre": "Cielorraso Ignífugo",
+  "orden": 5,
+  "eyebrow": "Producto",
+  "titulo_pre": "CIELORRASO",
+  "titulo_highlight": "IGNÍFUGO",
+  "subtitulo": "Sistema de techo no combustible y resistente a la humedad. Cumple normativas de seguridad contra incendios para vivienda, oficina e industria.",
+  "imagen_hero": "/uploads/textura-geometrico.jpg",
+  "imagen_hero_alt": "Cielorraso ignífugo instalado",
+  "cta_label": "Consultar Especificaciones",
+  "descripcion": "Cielorraso compuesto íntegramente por placas de yeso técnico, certificado para no propagar llama y soportar exposición prolongada a altas temperaturas sin desprenderse. La misma placa absorbe y libera vapor de agua sin deformarse ni desarrollar hongos.\n\nDisponible en dos sistemas de montaje (modular tipo americano y sellado tipo europeo) y con múltiples terminaciones —liso, texturado, perforado acústico— para adaptarse a obras residenciales, oficinas, hospitales, salones e instalaciones industriales.",
+  "beneficios": [
+    { "icon": "Flame", "title": "Clasificación RE-1", "desc": "Incombustible según norma IRAM 11910-3. Clase A según DIN 4102. Certificado por INTI." },
+    { "icon": "Droplets", "title": "Resistente a la humedad", "desc": "Absorbe y libera vapor de agua sin deformarse ni generar moho." },
+    { "icon": "Snowflake", "title": "Aislación térmica", "desc": "Mejora el comportamiento térmico del recinto." },
+    { "icon": "Volume2", "title": "Performance acústica", "desc": "Versiones perforadas absorben sonido. Apto para auditorios y oficinas abiertas." },
+    { "icon": "Layers", "title": "Múltiples terminaciones", "desc": "Liso, texturado, perforado, grillado. Cada espacio con la mejor solución estética." },
+    { "icon": "Shield", "title": "Estabilidad dimensional", "desc": "No se deforma ante humedad ni temperatura. Mantiene plano y geometría." }
+  ],
+  "galeria": [
+    { "img": "/uploads/textura-geometrico.jpg", "alt": "Patrón geométrico de cielorraso" },
+    { "img": "/uploads/trabajo-3.jpg", "alt": "Cielorraso instalado en baño" },
+    { "img": "/uploads/trabajo-4.jpg", "alt": "Aplicación en local comercial" }
+  ],
+  "especificaciones": [
+    { "label": "Material", "valor": "Placa de yeso técnico" },
+    { "label": "Clasificación al fuego", "valor": "RE-1 (IRAM 11910-3) · Clase A (DIN 4102)" },
+    { "label": "Certificación", "valor": "INTI" },
+    { "label": "Sistemas de montaje", "valor": "Modular americano · Sellado europeo" },
+    { "label": "Terminaciones", "valor": "Liso, texturado, perforado acústico, grillado" }
+  ],
+  "faq": [
+    { "pregunta": "¿Sirve para cumplir normativa de seguridad contra incendios?", "respuesta": "Sí, cuenta con clasificación RE-1 según norma IRAM y certificación INTI." },
+    { "pregunta": "¿Se puede instalar en ambientes muy húmedos como baños o cocinas industriales?", "respuesta": "Sí, está pensado justamente para tolerar humedad sin deformaciones ni hongos." },
+    { "pregunta": "¿Qué diferencia hay entre el sistema modular y el sellado?", "respuesta": "El modular permite acceso fácil a instalaciones que pasan por arriba del cielorraso (luces, AC, ductos). El sellado da un aspecto continuo y monolítico." }
+  ]
+}

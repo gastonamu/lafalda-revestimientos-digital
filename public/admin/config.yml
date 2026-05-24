@@ -192,3 +192,59 @@ collections:
           - { name: horario_resumen, label: "Resumen de horarios", widget: string }
           - { name: copyright, label: "Texto copyright (sin el año)", widget: string }
           - { name: derechos, label: "Texto de derechos reservados", widget: string }
+
+  - name: "productos"
+    label: "Productos"
+    description: "Páginas individuales de cada producto. Cada uno tiene su propia URL en /productos/<slug>/ y aparece en el menú del header."
+    folder: "src/content/productos"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "nombre"
+    summary: "{{nombre}} (orden: {{orden}})"
+    fields:
+      - { name: slug, label: "Slug (parte de la URL)", widget: string, hint: "Solo minúsculas, números y guiones. Ej: sistema-antihumedad" }
+      - { name: nombre, label: "Nombre del producto (para el menú)", widget: string }
+      - { name: orden, label: "Orden en el menú", widget: number, value_type: "int", default: 99, hint: "Menor número = aparece primero" }
+      - { name: eyebrow, label: "Pretítulo del hero (chico)", widget: string }
+      - { name: titulo_pre, label: "Título — parte blanca", widget: string }
+      - { name: titulo_highlight, label: "Título — parte dorada", widget: string }
+      - { name: subtitulo, label: "Subtítulo (debajo del título)", widget: text }
+      - { name: imagen_hero, label: "Imagen principal del hero", widget: image }
+      - { name: imagen_hero_alt, label: "Descripción de la imagen (accesibilidad)", widget: string }
+      - { name: cta_label, label: "Texto del botón principal", widget: string, default: "Solicitar Presupuesto" }
+      - { name: descripcion, label: "Descripción larga (acepta saltos de línea)", widget: text, required: false }
+      - name: beneficios
+        label: "Beneficios (¿por qué elegirlo?)"
+        widget: list
+        required: false
+        fields:
+          - name: icon
+            label: "Ícono"
+            widget: select
+            options: ["Shield", "Droplets", "Layers", "Home", "Search", "Factory", "Zap", "Clock", "CheckSquare", "Wrench", "Flame", "Snowflake", "Volume2", "Hammer", "Ruler"]
+          - { name: title, label: "Título del beneficio", widget: string }
+          - { name: desc, label: "Descripción", widget: text }
+      - name: galeria
+        label: "Galería de imágenes en obra"
+        widget: list
+        required: false
+        fields:
+          - { name: img, label: "Imagen", widget: image }
+          - { name: alt, label: "Descripción (accesibilidad)", widget: string }
+      - name: especificaciones
+        label: "Ficha técnica (especificaciones)"
+        widget: list
+        required: false
+        fields:
+          - { name: label, label: "Característica (ej: Espesor)", widget: string }
+          - { name: valor, label: "Valor (ej: 6 mm)", widget: string }
+      - name: faq
+        label: "Preguntas frecuentes"
+        widget: list
+        required: false
+        fields:
+          - { name: pregunta, label: "Pregunta", widget: string }
+          - { name: respuesta, label: "Respuesta", widget: text }

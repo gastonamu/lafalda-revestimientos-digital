@@ -1,0 +1,39 @@
+{
+  "slug": "sistema-antihumedad",
+  "nombre": "Sistema Antihumedad",
+  "orden": 1,
+  "eyebrow": "Producto",
+  "titulo_pre": "SISTEMA",
+  "titulo_highlight": "ANTIHUMEDAD",
+  "subtitulo": "Placas decorativas con tecnología de evaporación controlada. Solución definitiva contra humedad, salitre y hongos en paredes y techos.",
+  "imagen_hero": "/uploads/hero-placa.jpg",
+  "imagen_hero_alt": "Placa antihumedad Carrera instalada",
+  "cta_label": "Solicitar Diagnóstico Gratuito",
+  "descripcion": "Nuestro sistema antihumedad combina placas decorativas con un proceso técnico que permite que la pared respire y elimina los efectos de la humedad ascendente, condensación y filtraciones. La instalación la realiza personal capacitado y deja el ambiente listo para usar en pocas horas, sin escombros ni reparaciones posteriores.\n\nA diferencia de un revoque común o una pintura impermeable, no tapa el problema: lo gestiona. La placa actúa como una barrera decorativa que permite el intercambio gaseoso del muro mientras protege la superficie visible.",
+  "beneficios": [
+    { "icon": "Droplets", "title": "Elimina la humedad real", "desc": "Trata humedad ascendente, condensación y filtraciones, no las disimula. Adiós a manchas, salitre y descascaramiento." },
+    { "icon": "Flame", "title": "Incombustible", "desc": "Las placas no propagan llama. Ideales para zonas técnicas, cocinas y ambientes con requerimientos de seguridad." },
+    { "icon": "Snowflake", "title": "Aislante térmico", "desc": "Mejora el confort de la habitación y reduce el consumo de calefacción o aire acondicionado." },
+    { "icon": "Volume2", "title": "Aislante acústico", "desc": "Reduce el ruido entre ambientes y desde el exterior." },
+    { "icon": "Shield", "title": "Garantía por escrito", "desc": "Cada instalación entregada con certificación formal del trabajo y respaldo de fábrica." },
+    { "icon": "Zap", "title": "Instalación rápida", "desc": "Sin obra húmeda. La habitación queda lista para uso en pocas horas." }
+  ],
+  "galeria": [
+    { "img": "/uploads/trabajo-1.jpg", "alt": "Living revestido con sistema antihumedad" },
+    { "img": "/uploads/trabajo-3.jpg", "alt": "Baño con placas antihumedad" },
+    { "img": "/uploads/trabajo-4.jpg", "alt": "Local comercial con revestimiento antihumedad" }
+  ],
+  "especificaciones": [
+    { "label": "Medidas", "valor": "60 x 60 cm" },
+    { "label": "Espesor", "valor": "10 mm" },
+    { "label": "Material", "valor": "Compuesto mineral con tratamiento antihumedad" },
+    { "label": "Garantía", "valor": "Por escrito" },
+    { "label": "Resistencia al fuego", "valor": "Incombustible" }
+  ],
+  "faq": [
+    { "pregunta": "¿En cuánto tiempo está lista la obra?", "respuesta": "La mayoría de las habitaciones quedan terminadas y habitables el mismo día. Para ambientes grandes pueden necesitarse 1 o 2 jornadas adicionales." },
+    { "pregunta": "¿Funciona si la humedad es severa?", "respuesta": "Sí, justamente está pensado para casos donde otras soluciones (pintura, revoque, impermeabilizante) ya fallaron. Hacemos diagnóstico previo y te confirmamos antes de presupuestar." },
+    { "pregunta": "¿Hace falta romper la pared o sacar el revestimiento anterior?", "respuesta": "No. El sistema se instala sobre la superficie existente, sin escombros ni demolición." },
+    { "pregunta": "¿Qué garantía dan?", "respuesta": "Garantía por escrito del trabajo realizado, con respaldo de fábrica." }
+  ]
+}
