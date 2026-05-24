@@ -184,12 +184,9 @@ const Navbar = () => {
           )}
 
           <PresupuestoModal
+            onOpenChange={(isOpen) => { if (isOpen) closeMobile(); }}
             trigger={
-              <button
-                type="button"
-                onClick={closeMobile}
-                className="btn-gold w-full text-center mt-2"
-              >
+              <button type="button" className="btn-gold w-full text-center mt-2">
                 Presupuesto
               </button>
             }

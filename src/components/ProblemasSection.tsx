@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import problemas from "@/content/problemas.json";
-import { waLink, waMensajes } from "@/lib/wa";
+import PresupuestoModal from "@/components/PresupuestoModal";
 
 const ProblemasSection = () => {
   return (
@@ -69,9 +69,13 @@ const ProblemasSection = () => {
           transition={{ duration: 0.4, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href={waLink(waMensajes.diagnostico)} target="_blank" rel="noopener noreferrer" className="btn-gold">
-            {problemas.cta_primary_label}
-          </a>
+          <PresupuestoModal
+            trigger={
+              <button type="button" className="btn-gold">
+                {problemas.cta_primary_label}
+              </button>
+            }
+          />
           <a href="#proyectos" className="btn-outline">
             {problemas.cta_secondary_label}
           </a>

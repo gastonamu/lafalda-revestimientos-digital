@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CheckSquare, Droplets, Shield, type LucideIcon } from "lucide-react";
 import hero from "@/content/hero.json";
-import { waLink, waMensajes } from "@/lib/wa";
+import PresupuestoModal from "@/components/PresupuestoModal";
 
 const ICONS: Record<string, LucideIcon> = { CheckSquare, Droplets, Shield };
 
@@ -47,9 +47,13 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href={waLink(waMensajes.diagnostico)} target="_blank" rel="noopener noreferrer" className="btn-gold">
-              {hero.cta_primary_label}
-            </a>
+            <PresupuestoModal
+              trigger={
+                <button type="button" className="btn-gold">
+                  {hero.cta_primary_label}
+                </button>
+              }
+            />
             <a href="#proyectos" className="btn-outline">
               {hero.cta_secondary_label}
             </a>

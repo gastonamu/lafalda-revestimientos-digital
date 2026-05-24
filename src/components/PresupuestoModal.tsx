@@ -56,11 +56,17 @@ function armarMensaje(form: FormState): string {
 
 type Props = {
   trigger: ReactNode;
+  onOpenChange?: (open: boolean) => void;
 };
 
-const PresupuestoModal = ({ trigger }: Props) => {
+const PresupuestoModal = ({ trigger, onOpenChange }: Props) => {
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState<FormState>(empty);
+
+  const handleOpenChange = (next: boolean) => {
+    setOpen(next);
+    onOpenChange?.(next);
+  };
 
   const update = <K extends keyof FormState>(key: K) => (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -73,7 +79,7 @@ const PresupuestoModal = ({ trigger }: Props) => {
     // Limpio el form y cierro el modal después de enviar
     setTimeout(() => {
       setForm(empty);
-      setOpen(false);
+      handleOpenChange(false);
     }, 200);
   };
 
@@ -84,7 +90,7 @@ const PresupuestoModal = ({ trigger }: Props) => {
   const labelStyle = { fontFamily: "'Oswald', sans-serif", letterSpacing: "0.12em" } as const;
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent
         className="bg-[#0f0f0f] border-white/10 text-white sm:max-w-md"
