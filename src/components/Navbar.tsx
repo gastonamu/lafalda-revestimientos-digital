@@ -116,7 +116,7 @@ const Navbar = () => {
             trigger={
               <button type="button" className="btn-gold flex items-center gap-2">
                 <MessageCircle className="w-4 h-4" />
-                Presupuesto
+                Presupuestar Gratis
               </button>
             }
           />
@@ -187,7 +187,7 @@ const Navbar = () => {
             onOpenChange={(isOpen) => { if (isOpen) closeMobile(); }}
             trigger={
               <button type="button" className="btn-gold w-full text-center mt-2">
-                Presupuesto
+                Presupuestar Gratis
               </button>
             }
           />

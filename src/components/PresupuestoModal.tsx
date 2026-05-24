@@ -17,7 +17,6 @@ type FormState = {
   nombre: string;
   localidad: string;
   email: string;
-  mts: string;
   consulta: string;
 };
 
@@ -25,7 +24,6 @@ const empty: FormState = {
   nombre: "",
   localidad: "",
   email: "",
-  mts: "",
   consulta: "",
 };
 
@@ -36,7 +34,6 @@ function armarMensaje(form: FormState): string {
     ["Nombre y apellido", form.nombre],
     ["Localidad", form.localidad],
     ["Email", form.email],
-    ["Metros cuadrados", form.mts],
   ];
   const completados = datos.filter(([, v]) => v.trim() !== "");
 
@@ -101,7 +98,7 @@ const PresupuestoModal = ({ trigger, onOpenChange }: Props) => {
             className="text-2xl text-white"
             style={{ fontFamily: "'Oswald', sans-serif", letterSpacing: "0.04em" }}
           >
-            SOLICITAR <span style={{ color: "hsl(43,74%,49%)" }}>PRESUPUESTO</span>
+            SOLICITAR <span style={{ color: "hsl(43,74%,49%)" }}>PRESUPUESTO GRATIS</span>
           </DialogTitle>
           <DialogDescription className="text-white/50 text-sm">
             Completá los datos que quieras y te respondemos por WhatsApp.
@@ -124,33 +121,18 @@ const PresupuestoModal = ({ trigger, onOpenChange }: Props) => {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-1.5">
-              <Label htmlFor="localidad" className={labelClass} style={labelStyle}>
-                Localidad
-              </Label>
-              <Input
-                id="localidad"
-                value={form.localidad}
-                onChange={update("localidad")}
-                placeholder="La Falda"
-                className={fieldClass}
-                autoComplete="address-level2"
-              />
-            </div>
-            <div className="space-y-1.5">
-              <Label htmlFor="mts" className={labelClass} style={labelStyle}>
-                Metros²
-              </Label>
-              <Input
-                id="mts"
-                value={form.mts}
-                onChange={update("mts")}
-                placeholder="30"
-                inputMode="numeric"
-                className={fieldClass}
-              />
-            </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="localidad" className={labelClass} style={labelStyle}>
+              Localidad
+            </Label>
+            <Input
+              id="localidad"
+              value={form.localidad}
+              onChange={update("localidad")}
+              placeholder="La Falda"
+              className={fieldClass}
+              autoComplete="address-level2"
+            />
           </div>
 
           <div className="space-y-1.5">
@@ -187,7 +169,7 @@ const PresupuestoModal = ({ trigger, onOpenChange }: Props) => {
             className="btn-gold w-full flex items-center justify-center gap-2 mt-2"
           >
             <MessageCircle className="w-4 h-4" />
-            Solicitar Presupuesto
+            Solicitar Presupuesto Gratis
           </button>
         </form>
       </DialogContent>
