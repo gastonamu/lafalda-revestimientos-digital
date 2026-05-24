@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
-import { waLink, waMensajes } from "@/lib/wa";
 import { productos } from "@/lib/productos";
+import PresupuestoModal from "@/components/PresupuestoModal";
 
 const links = [
   { label: "Inicio", href: "/#inicio" },
@@ -10,8 +10,6 @@ const links = [
   { label: "Soluciones", href: "/#soluciones" },
   { label: "Proyectos", href: "/#proyectos" },
 ];
-
-const presupuestoHref = waLink(waMensajes.presupuesto);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -114,15 +112,14 @@ const Navbar = () => {
 
         {/* Presupuesto CTA */}
         <div className="hidden md:flex items-center">
-          <a
-            href={presupuestoHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold flex items-center gap-2"
-          >
-            <MessageCircle className="w-4 h-4" />
-            Presupuesto
-          </a>
+          <PresupuestoModal
+            trigger={
+              <button type="button" className="btn-gold flex items-center gap-2">
+                <MessageCircle className="w-4 h-4" />
+                Presupuesto
+              </button>
+            }
+          />
         </div>
 
         {/* Mobile hamburger */}
@@ -186,15 +183,17 @@ const Navbar = () => {
             </div>
           )}
 
-          <a
-            href={presupuestoHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMobile}
-            className="btn-gold w-full text-center mt-2"
-          >
-            Presupuesto
-          </a>
+          <PresupuestoModal
+            trigger={
+              <button
+                type="button"
+                onClick={closeMobile}
+                className="btn-gold w-full text-center mt-2"
+              >
+                Presupuesto
+              </button>
+            }
+          />
         </div>
       )}
     </nav>
