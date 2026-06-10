@@ -142,8 +142,26 @@ collections:
               - { name: lugar, label: "Lugar (ej: La Falda)", widget: string }
               - { name: desc, label: "Descripción del proyecto", widget: string }
 
+      - file: "src/content/testimonios.json"
+        label: "6 · Testimonios de clientes"
+        name: "testimonios"
+        fields:
+          - { name: eyebrow, label: "Pretítulo", widget: string }
+          - { name: title_pre, label: "Título — parte blanca", widget: string }
+          - { name: title_highlight, label: "Título — parte dorada", widget: string }
+          - { name: subtitle, label: "Subtítulo", widget: text, required: false }
+          - name: items
+            label: "Testimonios"
+            widget: list
+            min: 1
+            fields:
+              - { name: nombre, label: "Nombre del cliente", widget: string }
+              - { name: lugar, label: "Lugar (ej: La Falda, Córdoba)", widget: string }
+              - { name: rating, label: "Estrellas (1 a 5)", widget: number, value_type: "int", default: 5, min: 1, max: 5 }
+              - { name: texto, label: "Testimonio", widget: text }
+
       - file: "src/content/ubicacion.json"
-        label: "6 · Dónde estamos (ubicación)"
+        label: "7 · Dónde estamos (ubicación)"
         name: "ubicacion"
         fields:
           - { name: eyebrow, label: "Pretítulo", widget: string }
@@ -161,7 +179,7 @@ collections:
           - { name: popup_direccion, label: "Dirección en el popup", widget: string }
 
       - file: "src/content/footer.json"
-        label: "7 · Footer (pie de página)"
+        label: "8 · Footer (pie de página)"
         name: "footer"
         fields:
           - { name: descripcion, label: "Descripción de la empresa", widget: text }

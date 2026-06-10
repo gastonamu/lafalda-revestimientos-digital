@@ -1,0 +1,44 @@
+{
+  "eyebrow": "Lo que dicen nuestros clientes",
+  "title_pre": "TESTIMONIOS",
+  "title_highlight": "REALES",
+  "subtitle": "Familias y empresas de todo el Valle de Punilla que ya solucionaron su problema de humedad con Carrera.",
+  "items": [
+    {
+      "nombre": "María Fernanda Gómez",
+      "lugar": "La Falda, Córdoba",
+      "rating": 5,
+      "texto": "Teníamos humedad en el techo del living hace años. El equipo de Carrera hizo un diagnóstico gratuito y en dos días dejaron todo impecable. El acabado quedó hermoso y no volvió a aparecer ni una mancha."
+    },
+    {
+      "nombre": "Roberto Sánchez",
+      "lugar": "Valle Hermoso, Córdoba",
+      "rating": 5,
+      "texto": "Excelente atención de principio a fin. Lo que más valoré fue la garantía por escrito y que cumplieron los plazos al pie de la letra. Trabajo limpio, sin escombros y a un precio justo de fábrica."
+    },
+    {
+      "nombre": "Lucía Martínez",
+      "lugar": "Huerta Grande, Córdoba",
+      "rating": 5,
+      "texto": "Revestí toda la pared del frente de mi casa con sus placas decorativas. Cambió por completo la fachada y los vecinos no paran de preguntarme quién lo hizo. Súper recomendables."
+    },
+    {
+      "nombre": "Carlos Ferreyra",
+      "lugar": "Cosquín, Córdoba",
+      "rating": 5,
+      "texto": "Soy constructor y los contrato para todas mis obras. Materiales de primera, instalación profesional y siempre responden por su trabajo. Una empresa seria que cumple."
+    },
+    {
+      "nombre": "Verónica Ríos",
+      "lugar": "La Falda, Córdoba",
+      "rating": 5,
+      "texto": "Pedí un presupuesto por WhatsApp y me respondieron al instante. Vinieron a casa, evaluaron el caso sin compromiso y la solución fue exactamente lo que necesitaba. Muy agradecida."
+    },
+    {
+      "nombre": "Diego Pereyra",
+      "lugar": "Capilla del Monte, Córdoba",
+      "rating": 5,
+      "texto": "Después de probar de todo contra la humedad, Carrera fue la única solución que realmente funcionó. Hace más de un año que está perfecto. Vale cada peso."
+    }
+  ]
+}
